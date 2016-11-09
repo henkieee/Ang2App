@@ -1,0 +1,16 @@
+<ul class="list">
+  <app-list-item-component
+    [item]="item"
+    *ngFor="let item of items; let i = index; "
+    (itemChange)="changeItem($event, i)"
+  ></app-list-item-component>
+
+  <br/>
+  <br/>
+  <br/>
+
+  <app-create-item
+    [item]="currentItem"
+    (setName)="addTitle($event)"
+  ></app-create-item>
+</ul>

@@ -1,0 +1,8 @@
+
+<input [(ngModel)]="item.title">
+
+<p>Value: {{ item.title }}</p>
+
+<button (click)="saveItem(item)">Set value</button>
+
+<button (click)="clearItem(item.title)">Clear value</button>
